@@ -1,15 +1,13 @@
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
-// About Me ki image ko target kiya gaya hai
+
 const aboutMeIcon = document.getElementById('about-me-icon');
 
 
 function setTheme(isDark) {
     if (isDark) {
         body.classList.add('dark-theme');
-        // Icon text/emoji hata diya gaya hai. Ab CSS se aayega.
-        // themeToggle.textContent = '\u263D'; 
         localStorage.setItem('theme', 'dark');
         
         if (aboutMeIcon) {
@@ -18,8 +16,6 @@ function setTheme(isDark) {
 
     } else {
         body.classList.remove('dark-theme');
-        // Icon text/emoji hata diya gaya hai. Ab CSS se aayega.
-        // themeToggle.textContent = '\u2600\uFE0F'; 
         localStorage.setItem('theme', 'light');
 
         if (aboutMeIcon) {
@@ -27,7 +23,7 @@ function setTheme(isDark) {
         }
     }
 }
-// ... (rest of the script.js remains the same)
+
 
 document.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
