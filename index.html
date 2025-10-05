@@ -10,12 +10,18 @@
 <body>
     <nav>
         <div class="logo">Portfolio</div>
+        
+        
+        
         <ul class="nav-links">
+            <li class="nav-toggle-item">
+                <button id="theme-toggle" aria-label="Toggle Dark Mode"></button>
+            </li>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>  
+        </ul>  
     </nav>
     <header class="home" id="home">
         <h1>Welcome to My Portfolio</h1>
@@ -28,7 +34,12 @@
     <section class="about" id="about">
         <h2>About Me</h2>
         <p>I am a software developer with a passion for creating innovative solutions. I specialize in web development and have experience with various programming languages and frameworks.</p>
-        <img src="https://cdn-icons-png.flaticon.com/512/3596/3596097.png" alt="About Me" class="about-img">
+        <img src="https://cdn-icons-png.flaticon.com/512/3596/3596097.png" 
+            alt="About Me" 
+            class="about-img"
+            id ="about-me-icon"
+            data-light-src="https://cdn-icons-png.flaticon.com/512/3596/3596097.png"
+            data-dark-src="https://cdn-icons-png.flaticon.com/512/3596/3596091.png">
     </section>
     <section class="projects" id="projects">
         <h2>My Projects</h2>
@@ -63,10 +74,9 @@
         </form>
     </section>
     <footer>
-        <p>&copy; 2025 Suryansh Kumar. All rights reserved.</p>
+        <p>© 2025 Suryansh Kumar. All rights reserved.</p>
     </footer>
     
-
-
+    <script src="script.js"></script>
 </body>
 </html>
